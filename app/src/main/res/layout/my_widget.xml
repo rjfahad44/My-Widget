@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/round_corner_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextClock
+        android:id="@+id/textClock12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/appwidget_text"
+        android:format12Hour="hh:mm:ss\na\nd MMM, yyyy"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold|italic" />
+
+    <TextClock
+        android:id="@+id/textClock24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/appwidget_text"
+        android:format12Hour="kk:mm:ss\nd MMM, yyyy"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="44sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/clockFormatChangeImgBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:src="@drawable/hours_12" />
+
+</LinearLayout>
